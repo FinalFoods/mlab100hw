@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model ADS1231ID
+#/236335/55064/2.35/16/0/Integrated Circuit
+DEF ADS1231ID IC 0 30 Y Y 1 F N
+F0 "IC" 1350 300 50 H V L CNN
+F1 "ADS1231ID" 1350 200 50 H V L CNN
+F2 "SOIC127P600X175-16N" 1350 100 50 H I L CNN
+F3 "http://componentsearchengine.com/Datasheets/1/ADS1231ID.pdf" 1350 0 50 H I L CNN
+F4 "24-Bit, 80SPS, 1-Ch Delta-Sigma ADC for Resistive Bridge Sensors & Weigh Scales" 1350 -100 50 H I L CNN "Description"
+F5 "" 1350 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1350 -300 50 H I L CNN "Manufacturer_Name"
+F7 "ADS1231ID" 1350 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "8175691P" 1350 -500 50 H I L CNN "RS Part Number"
+F9 "http://uk.rs-online.com/web/p/products/8175691P" 1350 -600 50 H I L CNN "RS Price/Stock"
+F10 "595-ADS1231ID" 1350 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-ADS1231ID" 1350 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X DVDD 1 0 0 200 R 50 50 0 0 B
+X GND_2 2 0 -100 200 R 50 50 0 0 B
+X CLKIN 3 0 -200 200 R 50 50 0 0 B
+X SPEED 4 0 -300 200 R 50 50 0 0 B
+X CAP_2 5 0 -400 200 R 50 50 0 0 B
+X CAP 6 0 -500 200 R 50 50 0 0 B
+X AINP 7 0 -600 200 R 50 50 0 0 B
+X AINN 8 0 -700 200 R 50 50 0 0 B
+X VREFN 9 1500 0 200 L 50 50 0 0 B
+X VREFP 10 1500 -100 200 L 50 50 0 0 B
+X GND 11 1500 -200 200 L 50 50 0 0 B
+X PSW 12 1500 -300 200 L 50 50 0 0 B
+X AVDD 13 1500 -400 200 L 50 50 0 0 B
+X ~PDWN 14 1500 -500 200 L 50 50 0 0 B
+X SCLK 15 1500 -600 200 L 50 50 0 0 B
+X ~DRDY/DOUT 16 1500 -700 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 1300 100 1300 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model DS2482-100
+#/716383/55064/2.35/8/4/Integrated Circuit
+DEF DS2482-100 IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "DS2482-100" 950 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 950 100 50 H I L CNN
+F3 "https://datasheets.maximintegrated.com/en/ds/DS2482-100.pdf" 950 0 50 H I L CNN
+F4 "I/O Controller Interface IC" 950 -100 50 H I L CNN "Description"
+F5 "1.75" 950 -200 50 H I L CNN "Height"
+F6 "N/A" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "Maxim Integrated" 950 -400 50 H I L CNN "Manufacturer_Name"
+F8 "DS2482-100" 950 -500 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VCC 1 0 0 200 R 50 50 0 0 B
+X IO 2 0 -100 200 R 50 50 0 0 B
+X GND 3 0 -200 200 R 50 50 0 0 B
+X SCL 4 0 -300 200 R 50 50 0 0 B
+X AD1 8 1100 0 200 L 50 50 0 0 B
+X AD0 7 1100 -100 200 L 50 50 0 0 B
+X PCTLZ 6 1100 -200 200 L 50 50 0 0 B
+X SDA 5 1100 -300 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADC122S021CIMM_NOPB
+D 2 Channel, 50 ksps to 200 ksps 12-Bit A/D Converter
+K
+F http://www.ti.com/lit/gpn/ADC122S021
+$ENDCMP
+#
+#End Doc Library

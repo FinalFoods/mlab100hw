@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADS1231ID
+D 24-Bit, 80SPS, 1-Ch Delta-Sigma ADC for Resistive Bridge Sensors & Weigh Scales
+K
+F http://componentsearchengine.com/Datasheets/1/ADS1231ID.pdf
+$ENDCMP
+#
+#End Doc Library

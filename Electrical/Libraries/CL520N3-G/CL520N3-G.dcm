@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CL520N3-G
+D Microchip CL520N3-G LED Driver IC, 4.75  90 V dc 20mA 3-Pin TO-92
+K
+F http://docs-emea.rs-online.com/webdocs/1330/0900766b81330fdc.pdf
+$ENDCMP
+#
+#End Doc Library

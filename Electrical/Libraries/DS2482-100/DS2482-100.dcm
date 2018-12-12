@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS2482-100
+D I/O Controller Interface IC
+K
+F https://datasheets.maximintegrated.com/en/ds/DS2482-100.pdf
+$ENDCMP
+#
+#End Doc Library

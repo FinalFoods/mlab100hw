@@ -496,6 +496,21 @@ X IO25 9 -800 100 200 R 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
+# Mechanical:MountingHole
+#
+DEF Mechanical:MountingHole MH 0 40 Y Y 1 F N
+F0 "MH" 0 200 50 H V C CNN
+F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Regulator_Switching:R-78E5.0-1.0
 #
 DEF Regulator_Switching:R-78E5.0-1.0 U 0 10 Y Y 1 F N

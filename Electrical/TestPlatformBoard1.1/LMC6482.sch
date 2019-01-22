@@ -52,17 +52,17 @@ Wire Wire Line
 Wire Wire Line
 	4950 3800 4750 3800
 Text HLabel 4550 2450 0    50   Input ~ 0
-A-
+A+
 Wire Wire Line
 	4950 2650 4700 2650
 Text HLabel 4550 3800 0    50   Input ~ 0
-B-
+B+
 $Comp
 L Device:R R10
 U 1 1 5C00F9B7
 P 5050 2100
 F 0 "R10" V 4843 2100 50  0000 C CNN
-F 1 "5M" V 4934 2100 50  0000 C CNN
+F 1 "1M" V 4934 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" V 4980 2100 50  0001 C CNN
 F 3 "~" H 5050 2100 50  0001 C CNN
 	1    5050 2100
@@ -124,7 +124,7 @@ L Device:R R11
 U 1 1 5C0109FB
 P 5050 3450
 F 0 "R11" V 4843 3450 50  0000 C CNN
-F 1 "5M" V 4934 3450 50  0000 C CNN
+F 1 "1M" V 4934 3450 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" V 4980 3450 50  0001 C CNN
 F 3 "~" H 5050 3450 50  0001 C CNN
 	1    5050 3450
@@ -205,8 +205,6 @@ Wire Wire Line
 Connection ~ 5900 3900
 Text HLabel 4600 4300 0    50   Input ~ 0
 V-
-Text Notes 6150 2950 0    50   ~ 0
-ITS FUCKED, V- and A-/B- need to be switched\n
 Wire Wire Line
 	4950 4000 4700 4000
 Wire Wire Line

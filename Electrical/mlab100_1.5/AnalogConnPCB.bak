@@ -142,25 +142,25 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C67EC50
-P 4250 1400
+P 5450 3250
 AR Path="/5C67EC50" Ref="#PWR?"  Part="1" 
 AR Path="/5C665FDB/5C67EC50" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 4250 1150 50  0001 C CNN
-F 1 "GNDA" H 4255 1227 50  0000 C CNN
-F 2 "" H 4250 1400 50  0001 C CNN
-F 3 "" H 4250 1400 50  0001 C CNN
-	1    4250 1400
+F 0 "#PWR014" H 5450 3000 50  0001 C CNN
+F 1 "GNDA" H 5455 3077 50  0000 C CNN
+F 2 "" H 5450 3250 50  0001 C CNN
+F 3 "" H 5450 3250 50  0001 C CNN
+	1    5450 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 1300 4250 1300
+	5300 3150 5450 3150
 Wire Wire Line
-	4250 1400 4250 1300
-Connection ~ 4250 1300
+	5450 3250 5450 3150
+Connection ~ 5450 3150
 Wire Wire Line
-	4250 1300 4400 1300
+	5450 3150 5600 3150
 Wire Wire Line
-	4250 1000 4250 900 
+	5450 2850 5450 2750
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C67EC5D
@@ -215,14 +215,14 @@ Wire Notes Line
 $Comp
 L power:+3.3VA #PWR?
 U 1 1 5C67EC81
-P 4250 900
+P 5450 2750
 AR Path="/5C67EC81" Ref="#PWR?"  Part="1" 
 AR Path="/5C665FDB/5C67EC81" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 4250 750 50  0001 C CNN
-F 1 "+3.3VA" H 4265 1073 50  0000 C CNN
-F 2 "" H 4250 900 50  0001 C CNN
-F 3 "" H 4250 900 50  0001 C CNN
-	1    4250 900 
+F 0 "#PWR013" H 5450 2600 50  0001 C CNN
+F 1 "+3.3VA" H 5465 2923 50  0000 C CNN
+F 2 "" H 5450 2750 50  0001 C CNN
+F 3 "" H 5450 2750 50  0001 C CNN
+	1    5450 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -241,40 +241,27 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5C67EC8D
-P 4100 1150
+P 5300 3000
 AR Path="/5C67EC8D" Ref="C?"  Part="1" 
 AR Path="/5C665FDB/5C67EC8D" Ref="C2"  Part="1" 
-F 0 "C2" H 4215 1196 50  0000 L CNN
-F 1 "1uF" H 4215 1105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4138 1000 50  0001 C CNN
-F 3 "~" H 4100 1150 50  0001 C CNN
-	1    4100 1150
+F 0 "C2" H 5415 3046 50  0000 L CNN
+F 1 "1uF" H 5415 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5338 2850 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5C67EC94
-P 4400 1150
+P 5600 3000
 AR Path="/5C67EC94" Ref="C?"  Part="1" 
 AR Path="/5C665FDB/5C67EC94" Ref="C5"  Part="1" 
-F 0 "C5" H 4515 1196 50  0000 L CNN
-F 1 "0.1uF" H 4515 1105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4438 1000 50  0001 C CNN
-F 3 "~" H 4400 1150 50  0001 C CNN
-	1    4400 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C67EC9B
-P 5450 3050
-AR Path="/5C67EC9B" Ref="C?"  Part="1" 
-AR Path="/5C665FDB/5C67EC9B" Ref="C6"  Part="1" 
-F 0 "C6" H 5565 3096 50  0000 L CNN
-F 1 "1uF" H 5565 3005 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5488 2900 50  0001 C CNN
-F 3 "~" H 5450 3050 50  0001 C CNN
-	1    5450 3050
+F 0 "C5" H 5715 3046 50  0000 L CNN
+F 1 "0.1uF" H 5715 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5638 2850 50  0001 C CNN
+F 3 "~" H 5600 3000 50  0001 C CNN
+	1    5600 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -285,7 +272,7 @@ AR Path="/5C67ECA2" Ref="C?"  Part="1"
 AR Path="/5C665FDB/5C67ECA2" Ref="C1"  Part="1" 
 F 0 "C1" H 3215 2596 50  0000 L CNN
 F 1 "1uF" H 3215 2505 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3138 2400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603" H 3138 2400 50  0001 C CNN
 F 3 "~" H 3100 2550 50  0001 C CNN
 	1    3100 2550
 	1    0    0    -1  
@@ -303,103 +290,11 @@ F 3 "" H 3100 2700 50  0001 C CNN
 	1    3100 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5C67ECB5
-P 5450 2900
-AR Path="/5C67ECB5" Ref="#PWR?"  Part="1" 
-AR Path="/5C665FDB/5C67ECB5" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 5450 2750 50  0001 C CNN
-F 1 "+3.3VA" H 5465 3073 50  0000 C CNN
-F 2 "" H 5450 2900 50  0001 C CNN
-F 3 "" H 5450 2900 50  0001 C CNN
-	1    5450 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5C67ECBB
-P 5450 3200
-AR Path="/5C67ECBB" Ref="#PWR?"  Part="1" 
-AR Path="/5C665FDB/5C67ECBB" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 5450 2950 50  0001 C CNN
-F 1 "GNDA" H 5455 3027 50  0000 C CNN
-F 2 "" H 5450 3200 50  0001 C CNN
-F 3 "" H 5450 3200 50  0001 C CNN
-	1    5450 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5C67ECC1
-P 6700 2600
-AR Path="/5C67ECC1" Ref="#PWR?"  Part="1" 
-AR Path="/5C665FDB/5C67ECC1" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 6700 2350 50  0001 C CNN
-F 1 "GNDA" H 6705 2427 50  0000 C CNN
-F 2 "" H 6700 2600 50  0001 C CNN
-F 3 "" H 6700 2600 50  0001 C CNN
-	1    6700 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6550 2200 6700 2200
+	5300 2850 5450 2850
+Connection ~ 5450 2850
 Wire Wire Line
-	6550 2500 6700 2500
-Wire Wire Line
-	6700 2600 6700 2500
-Connection ~ 6700 2500
-Wire Wire Line
-	6700 2500 6850 2500
-Wire Wire Line
-	6700 2200 6700 2100
-Connection ~ 6700 2200
-Wire Wire Line
-	6700 2200 6850 2200
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 5C67ECCF
-P 6700 2100
-AR Path="/5C67ECCF" Ref="#PWR?"  Part="1" 
-AR Path="/5C665FDB/5C67ECCF" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 6700 1950 50  0001 C CNN
-F 1 "+3.3VA" H 6715 2273 50  0000 C CNN
-F 2 "" H 6700 2100 50  0001 C CNN
-F 3 "" H 6700 2100 50  0001 C CNN
-	1    6700 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C67ECD5
-P 6550 2350
-AR Path="/5C67ECD5" Ref="C?"  Part="1" 
-AR Path="/5C665FDB/5C67ECD5" Ref="C7"  Part="1" 
-F 0 "C7" H 6665 2396 50  0000 L CNN
-F 1 "1uF" H 6665 2305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6588 2200 50  0001 C CNN
-F 3 "~" H 6550 2350 50  0001 C CNN
-	1    6550 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C67ECDC
-P 6850 2350
-AR Path="/5C67ECDC" Ref="C?"  Part="1" 
-AR Path="/5C665FDB/5C67ECDC" Ref="C8"  Part="1" 
-F 0 "C8" H 6965 2396 50  0000 L CNN
-F 1 "0.1uF" H 6965 2305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6888 2200 50  0001 C CNN
-F 3 "~" H 6850 2350 50  0001 C CNN
-	1    6850 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 1000 4250 1000
-Connection ~ 4250 1000
-Wire Wire Line
-	4250 1000 4400 1000
+	5450 2850 5600 2850
 Text Notes 5100 850  0    250  ~ 0
 Analog\n
 Text Notes 6350 2500 2    100  ~ 0
@@ -427,39 +322,11 @@ AR Path="/5C67ECF7" Ref="JP?"  Part="1"
 AR Path="/5C665FDB/5C67ECF7" Ref="JP1"  Part="1" 
 F 0 "JP1" H 3500 1464 50  0000 C CNN
 F 1 "Jumper" H 3500 1373 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3500 1200 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 3500 1200 50  0001 C CNN
 F 3 "~" H 3500 1200 50  0001 C CNN
 	1    3500 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Male J?
-U 1 1 5C67ECFF
-P 6600 3100
-AR Path="/5C67ECFF" Ref="J?"  Part="1" 
-AR Path="/5C665FDB/5C67ECFF" Ref="J17"  Part="1" 
-F 0 "J17" H 6572 3031 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 6572 3121 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6600 3100 50  0001 C CNN
-F 3 "~" H 6600 3100 50  0001 C CNN
-	1    6600 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5C67ED06
-P 6900 3200
-AR Path="/5C67ED06" Ref="#PWR?"  Part="1" 
-AR Path="/5C665FDB/5C67ED06" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 6900 2950 50  0001 C CNN
-F 1 "GNDA" H 6905 3027 50  0000 C CNN
-F 2 "" H 6900 3200 50  0001 C CNN
-F 3 "" H 6900 3200 50  0001 C CNN
-	1    6900 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 3100 6800 3100
 Text HLabel 3300 3150 0    50   Input ~ 0
 3V3ACtrl
 Text HLabel 3450 2800 1    50   Input ~ 0
@@ -529,7 +396,7 @@ AR Path="/5C6D07BD" Ref="R?"  Part="1"
 AR Path="/5C665FDB/5C6D07BD" Ref="R12"  Part="1" 
 F 0 "R12" V 2307 5950 50  0000 C CNN
 F 1 "3k3" V 2216 5950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2030 5950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 2030 5950 50  0001 C CNN
 F 3 "~" H 2100 5950 50  0001 C CNN
 	1    2100 5950
 	0    -1   -1   0   
@@ -572,7 +439,7 @@ AR Path="/5C6F2357" Ref="R?"  Part="1"
 AR Path="/5C665FDB/5C6F2357" Ref="R15"  Part="1" 
 F 0 "R15" V 4107 6150 50  0000 C CNN
 F 1 "10k" V 4016 6150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 6150 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 3830 6150 50  0001 C CNN
 F 3 "~" H 3900 6150 50  0001 C CNN
 	1    3900 6150
 	1    0    0    -1  
@@ -630,7 +497,7 @@ AR Path="/5C6FBF78" Ref="R?"  Part="1"
 AR Path="/5C665FDB/5C6FBF78" Ref="R13"  Part="1" 
 F 0 "R13" V 2307 6750 50  0000 C CNN
 F 1 "3k3" V 2216 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2030 6750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 2030 6750 50  0001 C CNN
 F 3 "~" H 2100 6750 50  0001 C CNN
 	1    2100 6750
 	0    -1   -1   0   
@@ -673,7 +540,7 @@ AR Path="/5C6FBFA5" Ref="R?"  Part="1"
 AR Path="/5C665FDB/5C6FBFA5" Ref="R16"  Part="1" 
 F 0 "R16" V 4107 6950 50  0000 C CNN
 F 1 "10k" V 4016 6950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 6950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 3830 6950 50  0001 C CNN
 F 3 "~" H 3900 6950 50  0001 C CNN
 	1    3900 6950
 	1    0    0    -1  
@@ -763,8 +630,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 1950 8650 2050
 Wire Wire Line
-	6900 3200 6900 3100
-Wire Wire Line
 	4300 5700 10600 5700
 Text HLabel 1950 4600 0    50   Input ~ 0
 Temp1wDaisy
@@ -790,7 +655,7 @@ AR Path="/5C911551" Ref="R?"  Part="1"
 AR Path="/5C665FDB/5C911551" Ref="R14"  Part="1" 
 F 0 "R14" V 2407 4450 50  0000 C CNN
 F 1 "4k7" V 2316 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2130 4450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" V 2130 4450 50  0001 C CNN
 F 3 "~" H 2200 4450 50  0001 C CNN
 	1    2200 4450
 	-1   0    0    1   

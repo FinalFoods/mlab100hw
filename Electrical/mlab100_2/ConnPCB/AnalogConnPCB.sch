@@ -1,0 +1,686 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 3
+Title "mlab100"
+Date "2019-01-27"
+Rev "1.5"
+Comp "Microbiota Labs Inc"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5350 1300 700  800 
+U 5C67EBEE
+F0 "sheet5C67EBE6" 50
+F1 "LMC6482.sch" 50
+F2 "A+" I R 6050 1650 50 
+F3 "B+" I R 6050 1750 50 
+F4 "V+" I R 6050 1400 50 
+F5 "V-" I R 6050 2000 50 
+F6 "Aout" I L 5350 1650 50 
+F7 "Bout" I L 5350 1750 50 
+$EndSheet
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67EBF4
+P 6150 2100
+AR Path="/5C67EBF4" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EBF4" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 6150 1850 50  0001 C CNN
+F 1 "GNDA" H 6155 1927 50  0000 C CNN
+F 2 "" H 6150 2100 50  0001 C CNN
+F 3 "" H 6150 2100 50  0001 C CNN
+	1    6150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67EBFE
+P 3450 3250
+AR Path="/5C67EBFE" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EBFE" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 3450 3000 50  0001 C CNN
+F 1 "GNDA" H 3455 3077 50  0000 C CNN
+F 2 "" H 3450 3250 50  0001 C CNN
+F 3 "" H 3450 3250 50  0001 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D?
+U 1 1 5C67EC0B
+P 8450 1450
+AR Path="/5C67EC0B" Ref="D?"  Part="1" 
+AR Path="/5C665FDB/5C67EC0B" Ref="D13"  Part="1" 
+F 0 "D13" H 8400 1234 50  0000 C CNN
+F 1 "D_Photo" H 8400 1325 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 8400 1450 50  0001 C CNN
+F 3 "~" H 8400 1450 50  0001 C CNN
+	1    8450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADC122S021CIMM_NOPB:ADC122S021CIMM_NOPB IC?
+U 1 1 5C67EC17
+P 4700 2050
+AR Path="/5C67EC17" Ref="IC?"  Part="1" 
+AR Path="/5C665FDB/5C67EC17" Ref="IC4"  Part="1" 
+F 0 "IC4" H 5250 2315 50  0000 C CNN
+F 1 "ADC122S021CIMM_NOPB" H 5250 2224 50  0000 C CNN
+F 2 "ADC122S021CIMM_NOPB:SOP65P490X110-8N" H 5650 2150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/ADC122S021" H 5650 2050 50  0001 L CNN
+F 4 "2 Channel, 50 ksps to 200 ksps 12-Bit A/D Converter" H 5650 1950 50  0001 L CNN "Description"
+F 5 "1.1" H 5650 1850 50  0001 L CNN "Height"
+F 6 "ADC122S021CIMM/NOPB" H 5650 1750 50  0001 L CNN "TI store Part Number"
+F 7 "Texas Instruments" H 5650 1650 50  0001 L CNN "Manufacturer_Name"
+F 8 "ADC122S021CIMM/NOPB" H 5650 1550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4700 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 1750 3600 1750
+Wire Wire Line
+	4700 1850 4800 1850
+Wire Wire Line
+	4800 1850 4800 1450
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67EC28
+P 4800 1450
+AR Path="/5C67EC28" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC28" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 4800 1200 50  0001 C CNN
+F 1 "GNDA" H 4805 1277 50  0000 C CNN
+F 2 "" H 4800 1450 50  0001 C CNN
+F 3 "" H 4800 1450 50  0001 C CNN
+	1    4800 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 1950 4800 1950
+Wire Wire Line
+	4800 1950 4800 2150
+Wire Wire Line
+	3600 1950 3450 1950
+Wire Wire Line
+	3600 1850 3450 1850
+Wire Wire Line
+	3450 2050 3600 2050
+$Comp
+L TCR2EF33_LM(CT:TCR2EF33,LM(CT IC?
+U 1 1 5C67EC3D
+P 3550 2950
+AR Path="/5C67EC3D" Ref="IC?"  Part="1" 
+AR Path="/5C665FDB/5C67EC3D" Ref="IC3"  Part="1" 
+F 0 "IC3" H 4200 3215 50  0000 C CNN
+F 1 "TCR2EF33,LM(CT" H 4200 3124 50  0000 C CNN
+F 2 "TCR2EF33_LM(CT:SOT-25" H 4700 3050 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13794&prodName=TCR2EF45" H 4700 2950 50  0001 L CNN
+F 4 "Reg IC, CMOS, Vin6V, 3.3V/200mA, SOT-25 Toshiba TCR2EF33,LM(CT, LDO Voltage Regulator, 150mA, 3.3 V 1%, 1.5  5.55 Vin, 5-Pin SOT-25" H 4700 2850 50  0001 L CNN "Description"
+F 5 "" H 4700 2750 50  0001 L CNN "Height"
+F 6 "TCR2EF33LM(CTDKR-ND" H 4700 2650 50  0001 L CNN "DigiKey Part Number"
+F 7 "Toshiba" H 4700 2550 50  0001 L CNN "Manufacturer_Name"
+F 8 "TCR2EF33,LM(CT" H 4700 2450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4850 2950
+Wire Wire Line
+	3550 2950 3450 2950
+Wire Wire Line
+	3450 2950 3450 2800
+Wire Wire Line
+	3550 3050 3450 3050
+Wire Wire Line
+	3550 3150 3300 3150
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67EC50
+P 5450 3250
+AR Path="/5C67EC50" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC50" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 5450 3000 50  0001 C CNN
+F 1 "GNDA" H 5455 3077 50  0000 C CNN
+F 2 "" H 5450 3250 50  0001 C CNN
+F 3 "" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3150 5450 3150
+Wire Wire Line
+	5450 3250 5450 3150
+Connection ~ 5450 3150
+Wire Wire Line
+	5450 3150 5600 3150
+Wire Wire Line
+	5450 2850 5450 2750
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67EC5D
+P 8650 1550
+AR Path="/5C67EC5D" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC5D" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 8650 1300 50  0001 C CNN
+F 1 "GNDA" H 8655 1377 50  0000 C CNN
+F 2 "" H 8650 1550 50  0001 C CNN
+F 3 "" H 8650 1550 50  0001 C CNN
+	1    8650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5C67EC67
+P 5050 2950
+AR Path="/5C67EC67" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC67" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 5050 2800 50  0001 C CNN
+F 1 "+3.3VA" H 5065 3123 50  0000 C CNN
+F 2 "" H 5050 2950 50  0001 C CNN
+F 3 "" H 5050 2950 50  0001 C CNN
+	1    5050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3050 5050 3050
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5C67EC6F
+P 6300 1300
+AR Path="/5C67EC6F" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC6F" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 6300 1150 50  0001 C CNN
+F 1 "+3.3VA" H 6315 1473 50  0000 C CNN
+F 2 "" H 6300 1300 50  0001 C CNN
+F 3 "" H 6300 1300 50  0001 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4150 1800 3500 1800
+Wire Notes Line
+	3500 1800 3500 650 
+Wire Notes Line
+	3500 650  4700 650 
+Wire Notes Line
+	4700 650  4700 1050
+Wire Notes Line
+	4700 1050 7250 1050
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5C67EC81
+P 5450 2750
+AR Path="/5C67EC81" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC81" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5450 2600 50  0001 C CNN
+F 1 "+3.3VA" H 5465 2923 50  0000 C CNN
+F 2 "" H 5450 2750 50  0001 C CNN
+F 3 "" H 5450 2750 50  0001 C CNN
+	1    5450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5C67EC87
+P 4800 2150
+AR Path="/5C67EC87" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67EC87" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 4800 2000 50  0001 C CNN
+F 1 "+3.3VA" H 4815 2323 50  0000 C CNN
+F 2 "" H 4800 2150 50  0001 C CNN
+F 3 "" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C67EC8D
+P 5300 3000
+AR Path="/5C67EC8D" Ref="C?"  Part="1" 
+AR Path="/5C665FDB/5C67EC8D" Ref="C2"  Part="1" 
+F 0 "C2" H 5415 3046 50  0000 L CNN
+F 1 "1uF" H 5415 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5338 2850 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C67EC94
+P 5600 3000
+AR Path="/5C67EC94" Ref="C?"  Part="1" 
+AR Path="/5C665FDB/5C67EC94" Ref="C5"  Part="1" 
+F 0 "C5" H 5715 3046 50  0000 L CNN
+F 1 "0.1uF" H 5715 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5638 2850 50  0001 C CNN
+F 3 "~" H 5600 3000 50  0001 C CNN
+	1    5600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C67ECA2
+P 3100 2550
+AR Path="/5C67ECA2" Ref="C?"  Part="1" 
+AR Path="/5C665FDB/5C67ECA2" Ref="C1"  Part="1" 
+F 0 "C1" H 3215 2596 50  0000 L CNN
+F 1 "1uF" H 3215 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3138 2400 50  0001 C CNN
+F 3 "~" H 3100 2550 50  0001 C CNN
+	1    3100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67ECAF
+P 3100 2700
+AR Path="/5C67ECAF" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67ECAF" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3100 2450 50  0001 C CNN
+F 1 "GNDA" H 3105 2527 50  0000 C CNN
+F 2 "" H 3100 2700 50  0001 C CNN
+F 3 "" H 3100 2700 50  0001 C CNN
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2850 5450 2850
+Connection ~ 5450 2850
+Wire Wire Line
+	5450 2850 5600 2850
+Text Notes 5100 850  0    250  ~ 0
+Analog\n
+Text Notes 6350 2500 2    100  ~ 0
+Dual Op Amp\n
+Text Notes 4550 2400 2    100  ~ 0
+ADC\n
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C67ECE9
+P 3900 1300
+AR Path="/5C67ECE9" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C67ECE9" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 3900 1050 50  0001 C CNN
+F 1 "GNDA" H 3905 1127 50  0000 C CNN
+F 2 "" H 3900 1300 50  0001 C CNN
+F 3 "" H 3900 1300 50  0001 C CNN
+	1    3900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5C67ECF7
+P 3500 1200
+AR Path="/5C67ECF7" Ref="JP?"  Part="1" 
+AR Path="/5C665FDB/5C67ECF7" Ref="JP1"  Part="1" 
+F 0 "JP1" H 3500 1464 50  0000 C CNN
+F 1 "Jumper" H 3500 1373 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 3500 1200 50  0001 C CNN
+F 3 "~" H 3500 1200 50  0001 C CNN
+	1    3500 1200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3300 3150 0    50   Input ~ 0
+3V3ACtrl
+Text HLabel 3450 2800 1    50   Input ~ 0
+5V
+Text HLabel 3100 2400 1    50   Input ~ 0
+5V
+Text HLabel 3200 1200 0    50   Input ~ 0
+GND
+Text HLabel 3450 2050 0    50   Input ~ 0
+SPI_SCL
+Text HLabel 3450 1950 0    50   Input ~ 0
+SPI_MISO
+Text HLabel 3450 1850 0    50   Input ~ 0
+SPI_MOSI
+Text HLabel 3450 2150 0    50   Input ~ 0
+SPI_CS_ADC
+$Comp
+L Device:D_Photo D?
+U 1 1 5C67EC04
+P 8450 1950
+AR Path="/5C67EC04" Ref="D?"  Part="1" 
+AR Path="/5C665FDB/5C67EC04" Ref="D14"  Part="1" 
+F 0 "D14" H 8400 1734 50  0000 C CNN
+F 1 "D_Photo" H 8400 1825 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 8400 1950 50  0001 C CNN
+F 3 "~" H 8400 1950 50  0001 C CNN
+	1    8450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZXGD3006E6QTA:ZXGD3006E6QTA IC1
+U 1 1 5C69A395
+P 2350 5850
+F 0 "IC1" H 2950 6113 50  0000 C CNN
+F 1 "ZXGD3006E6QTA" H 2950 6023 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 3400 5950 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXGD3006E6.pdf" H 3400 5850 50  0001 L CNN
+F 4 "Gate Drivers 10A Gate Driver 40V 9.5ns" H 3400 5750 50  0001 L CNN "Description"
+F 5 "1.4" H 3400 5650 50  0001 L CNN "Height"
+F 6 "Diodes Inc." H 3400 5550 50  0001 L CNN "Manufacturer_Name"
+F 7 "ZXGD3006E6QTA" H 3400 5450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3400 5350 50  0001 L CNN "RS Part Number"
+F 9 "" H 3400 5250 50  0001 L CNN "RS Price/Stock"
+F 10 "621-ZXGD3006E6QTA" H 3400 5150 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-ZXGD3006E6QTA" H 3400 5050 50  0001 L CNN "Mouser Price/Stock"
+	1    2350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C6A05F4
+P 4200 5950
+AR Path="/5C6A05F4" Ref="Q?"  Part="1" 
+AR Path="/5C665FDB/5C6A05F4" Ref="Q1"  Part="1" 
+F 0 "Q1" H 4406 5995 50  0000 L CNN
+F 1 "AOD4184A" H 4406 5905 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 4400 6050 50  0001 C CNN
+F 3 "~" H 4200 5950 50  0001 C CNN
+	1    4200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C6D07BD
+P 2100 5950
+AR Path="/5C6D07BD" Ref="R?"  Part="1" 
+AR Path="/5C665FDB/5C6D07BD" Ref="R12"  Part="1" 
+F 0 "R12" V 2307 5950 50  0000 C CNN
+F 1 "3k3" V 2216 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2030 5950 50  0001 C CNN
+F 3 "~" H 2100 5950 50  0001 C CNN
+	1    2100 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 5950 2250 5950
+Wire Wire Line
+	2350 5850 2250 5850
+Wire Wire Line
+	2250 5850 2250 5750
+Text HLabel 2250 5750 1    50   Input ~ 0
+12V
+Text HLabel 4400 6300 2    50   Input ~ 0
+GND
+Text HLabel 1800 5950 0    50   Input ~ 0
+HeaterCtrl
+Wire Wire Line
+	1950 5950 1800 5950
+Wire Wire Line
+	2350 6050 2250 6050
+Wire Wire Line
+	2250 6050 2250 6150
+Wire Wire Line
+	3550 6050 3650 6050
+Wire Wire Line
+	3650 6050 3650 5950
+Wire Wire Line
+	3650 5850 3550 5850
+Wire Wire Line
+	3650 5950 3900 5950
+Connection ~ 3650 5950
+Wire Wire Line
+	3650 5950 3650 5850
+NoConn ~ 3550 5950
+$Comp
+L Device:R R?
+U 1 1 5C6F2357
+P 3900 6150
+AR Path="/5C6F2357" Ref="R?"  Part="1" 
+AR Path="/5C665FDB/5C6F2357" Ref="R15"  Part="1" 
+F 0 "R15" V 4107 6150 50  0000 C CNN
+F 1 "10k" V 4016 6150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3830 6150 50  0001 C CNN
+F 3 "~" H 3900 6150 50  0001 C CNN
+	1    3900 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6000 3900 5950
+Connection ~ 3900 5950
+Wire Wire Line
+	3900 5950 4000 5950
+Wire Wire Line
+	3900 6300 4300 6300
+Wire Wire Line
+	4300 6300 4300 6150
+Text HLabel 2250 6150 3    50   Input ~ 0
+GND
+$Comp
+L ZXGD3006E6QTA:ZXGD3006E6QTA IC2
+U 1 1 5C6FBF68
+P 2350 6650
+F 0 "IC2" H 2950 6913 50  0000 C CNN
+F 1 "ZXGD3006E6QTA" H 2950 6823 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 3400 6750 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXGD3006E6.pdf" H 3400 6650 50  0001 L CNN
+F 4 "Gate Drivers 10A Gate Driver 40V 9.5ns" H 3400 6550 50  0001 L CNN "Description"
+F 5 "1.4" H 3400 6450 50  0001 L CNN "Height"
+F 6 "Diodes Inc." H 3400 6350 50  0001 L CNN "Manufacturer_Name"
+F 7 "ZXGD3006E6QTA" H 3400 6250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3400 6150 50  0001 L CNN "RS Part Number"
+F 9 "" H 3400 6050 50  0001 L CNN "RS Price/Stock"
+F 10 "621-ZXGD3006E6QTA" H 3400 5950 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-ZXGD3006E6QTA" H 3400 5850 50  0001 L CNN "Mouser Price/Stock"
+	1    2350 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C6FBF6F
+P 4200 6750
+AR Path="/5C6FBF6F" Ref="Q?"  Part="1" 
+AR Path="/5C665FDB/5C6FBF6F" Ref="Q3"  Part="1" 
+F 0 "Q3" H 4406 6795 50  0000 L CNN
+F 1 "AOD4184A" H 4406 6705 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 4400 6850 50  0001 C CNN
+F 3 "~" H 4200 6750 50  0001 C CNN
+	1    4200 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6350 4300 6550
+$Comp
+L Device:R R?
+U 1 1 5C6FBF78
+P 2100 6750
+AR Path="/5C6FBF78" Ref="R?"  Part="1" 
+AR Path="/5C665FDB/5C6FBF78" Ref="R13"  Part="1" 
+F 0 "R13" V 2307 6750 50  0000 C CNN
+F 1 "3k3" V 2216 6750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2030 6750 50  0001 C CNN
+F 3 "~" H 2100 6750 50  0001 C CNN
+	1    2100 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 6750 2250 6750
+Wire Wire Line
+	2350 6650 2250 6650
+Wire Wire Line
+	2250 6650 2250 6550
+Text HLabel 4400 7100 2    50   Input ~ 0
+GND
+Text HLabel 10600 6350 2    50   Input ~ 0
+LED-
+Text HLabel 1800 6750 0    50   Input ~ 0
+470nmCtrl
+Wire Wire Line
+	1950 6750 1800 6750
+Wire Wire Line
+	2350 6850 2250 6850
+Wire Wire Line
+	2250 6850 2250 6950
+Wire Wire Line
+	3550 6850 3650 6850
+Wire Wire Line
+	3650 6850 3650 6750
+Wire Wire Line
+	3650 6650 3550 6650
+Wire Wire Line
+	3650 6750 3900 6750
+Connection ~ 3650 6750
+Wire Wire Line
+	3650 6750 3650 6650
+NoConn ~ 3550 6750
+$Comp
+L Device:R R?
+U 1 1 5C6FBFA5
+P 3900 6950
+AR Path="/5C6FBFA5" Ref="R?"  Part="1" 
+AR Path="/5C665FDB/5C6FBFA5" Ref="R16"  Part="1" 
+F 0 "R16" V 4107 6950 50  0000 C CNN
+F 1 "10k" V 4016 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3830 6950 50  0001 C CNN
+F 3 "~" H 3900 6950 50  0001 C CNN
+	1    3900 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6800 3900 6750
+Connection ~ 3900 6750
+Wire Wire Line
+	3900 6750 4000 6750
+Wire Wire Line
+	3900 7100 4300 7100
+Wire Wire Line
+	4300 7100 4300 6950
+Text HLabel 2250 6950 3    50   Input ~ 0
+GND
+Wire Wire Line
+	10600 6350 4300 6350
+Wire Wire Line
+	4300 5700 4300 5750
+Wire Wire Line
+	3450 3250 3450 3050
+Wire Wire Line
+	5050 2950 5050 3050
+Wire Notes Line
+	4150 1800 4150 3550
+Wire Notes Line
+	4150 3550 7250 3550
+Wire Notes Line
+	7250 1050 7250 3550
+Wire Wire Line
+	3800 1200 3900 1200
+Wire Wire Line
+	3900 1200 3900 1300
+Wire Wire Line
+	4700 2150 4700 2050
+Wire Wire Line
+	3450 2150 4700 2150
+Wire Wire Line
+	4700 1750 5350 1750
+Wire Wire Line
+	4650 1650 4650 1600
+Wire Wire Line
+	4650 1600 3550 1600
+Wire Wire Line
+	4650 1650 5350 1650
+Wire Wire Line
+	3550 1600 3550 1750
+Wire Wire Line
+	6150 2100 6150 2000
+Wire Wire Line
+	6150 2000 6050 2000
+Wire Wire Line
+	6300 1300 6300 1400
+Wire Wire Line
+	6300 1400 6050 1400
+Wire Wire Line
+	6050 1650 8150 1650
+Wire Wire Line
+	6050 1750 8150 1750
+Wire Wire Line
+	8550 1450 8650 1450
+Wire Wire Line
+	8650 1450 8650 1550
+Wire Wire Line
+	8150 1650 8150 1450
+Wire Wire Line
+	8150 1450 8250 1450
+Wire Wire Line
+	8150 1750 8150 1950
+Wire Wire Line
+	8150 1950 8250 1950
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C844CB9
+P 8650 2050
+AR Path="/5C844CB9" Ref="#PWR?"  Part="1" 
+AR Path="/5C665FDB/5C844CB9" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 8650 1800 50  0001 C CNN
+F 1 "GNDA" H 8655 1877 50  0000 C CNN
+F 2 "" H 8650 2050 50  0001 C CNN
+F 3 "" H 8650 2050 50  0001 C CNN
+	1    8650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1950 8650 1950
+Wire Wire Line
+	8650 1950 8650 2050
+Wire Wire Line
+	4300 5700 10600 5700
+Text HLabel 1950 4600 0    50   Input ~ 0
+Temp1wDaisy
+Wire Wire Line
+	1950 4600 2200 4600
+Text HLabel 1950 4300 0    50   Input ~ 0
+3V3
+Text HLabel 10750 4300 2    50   Input ~ 0
+3V3_O
+Wire Wire Line
+	1950 4300 2200 4300
+Text HLabel 10750 4400 2    50   Input ~ 0
+GND_O
+Text HLabel 10350 4400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	10350 4400 10750 4400
+$Comp
+L Device:R R?
+U 1 1 5C911551
+P 2200 4450
+AR Path="/5C911551" Ref="R?"  Part="1" 
+AR Path="/5C665FDB/5C911551" Ref="R14"  Part="1" 
+F 0 "R14" V 2407 4450 50  0000 C CNN
+F 1 "4k7" V 2316 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2130 4450 50  0001 C CNN
+F 3 "~" H 2200 4450 50  0001 C CNN
+	1    2200 4450
+	-1   0    0    1   
+$EndComp
+Connection ~ 2200 4300
+Connection ~ 2200 4600
+Wire Wire Line
+	2200 4300 10750 4300
+Wire Wire Line
+	2200 4600 10750 4600
+Text HLabel 10750 4600 2    50   Input ~ 0
+Temp1wDaisy_O
+Text HLabel 2250 6550 1    50   Input ~ 0
+12V
+Text HLabel 10750 4200 2    50   Input ~ 0
+12V_O
+Wire Wire Line
+	10350 4200 10750 4200
+Text HLabel 10350 4200 0    50   Input ~ 0
+12V
+Wire Wire Line
+	4400 6300 4300 6300
+Connection ~ 4300 6300
+Wire Wire Line
+	4400 7100 4300 7100
+Connection ~ 4300 7100
+Text HLabel 10600 5700 2    50   Input ~ 0
+Heater-
+$EndSCHEMATC

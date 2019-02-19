@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:mlab100_Conn_PCB_1.5-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 3
+Sheet 2 3
 Title "mlab100"
 Date "2019-01-27"
 Rev "1.5"

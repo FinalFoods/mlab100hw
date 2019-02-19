@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mlab100_Conn_PCB_1.5-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
